@@ -101,21 +101,6 @@ export default function DishList() {
 
   return (
     <div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <h2>Notre menu</h2>
-        <div className="price-badge">100€ / semaine</div>
-      </div>
-      <p className="muted">
-        Choisissez vos plats pour la semaine — chaque plat ajouté génère la
-        liste de courses.
-      </p>
-
       {/* Filter and Sort Controls */}
       <div className="filter-section">
         <h3
@@ -127,9 +112,7 @@ export default function DishList() {
             alignItems: "center",
             gap: "var(--spacing-sm)",
           }}
-        >
-          🔍 Filtres et tri
-        </h3>
+        />
 
         <div className="filter-grid">
           {/* Servings Selector */}

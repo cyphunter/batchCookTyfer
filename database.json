@@ -1,0 +1,851 @@
+{
+  "batchCookingRequests": [
+    {
+      "id": "1768937182369",
+      "userId": "1768937094048",
+      "userEmail": "kevin.dellova@hotmail.fr",
+      "userName": "Kevin Dellova",
+      "user": "Kevin Dellova",
+      "email": "kevin.dellova@hotmail.fr",
+      "date": "2026-01-23",
+      "cart": {
+        "items": [
+          {
+            "dish": {
+              "id": "d1",
+              "name": "Poulet rôti aux herbes",
+              "description": "Poulet rôti, pommes de terre et légumes de saison",
+              "image": "/assets/poulet.svg",
+              "recipe": {
+                "timeMinutes": 90,
+                "servings": 4,
+                "steps": [
+                  "Préchauffer le four à 200°C.",
+                  "Masserez le poulet avec de l'huile d'olive, sel, poivre et herbes (thym, romarin).",
+                  "Disposer le poulet dans un plat avec pommes de terre et carottes coupées.",
+                  "Rôtir 1h15 en arrosant de temps en temps.",
+                  "Laisser reposer 10 minutes avant de découper et servir."
+                ]
+              },
+              "ingredients": [
+                {
+                  "name": "Poulet entier",
+                  "quantity": 1,
+                  "unit": "pièce"
+                },
+                {
+                  "name": "Pommes de terre",
+                  "quantity": 800,
+                  "unit": "g"
+                },
+                {
+                  "name": "Carottes",
+                  "quantity": 4,
+                  "unit": "pièces"
+                },
+                {
+                  "name": "Thym",
+                  "quantity": 2,
+                  "unit": "branches"
+                },
+                {
+                  "name": "Romarin",
+                  "quantity": 2,
+                  "unit": "branches"
+                },
+                {
+                  "name": "Huile d'olive",
+                  "quantity": 3,
+                  "unit": "cuillères à soupe"
+                }
+              ]
+            },
+            "quantity": 1,
+            "servings": 4,
+            "adjustedIngredients": [
+              {
+                "name": "Poulet entier",
+                "quantity": 1,
+                "unit": "pièce"
+              },
+              {
+                "name": "Pommes de terre",
+                "quantity": 800,
+                "unit": "g"
+              },
+              {
+                "name": "Carottes",
+                "quantity": 4,
+                "unit": "pièces"
+              },
+              {
+                "name": "Thym",
+                "quantity": 2,
+                "unit": "branches"
+              },
+              {
+                "name": "Romarin",
+                "quantity": 2,
+                "unit": "branches"
+              },
+              {
+                "name": "Huile d'olive",
+                "quantity": 3,
+                "unit": "cuillères à soupe"
+              }
+            ],
+            "adjustedTime": 90,
+            "adjustedPrice": 48
+          },
+          {
+            "dish": {
+              "id": "d2",
+              "name": "Boeuf bourguignon",
+              "description": "Classique mijoté au vin rouge",
+              "image": "/assets/boeuf.svg",
+              "recipe": {
+                "timeMinutes": 180,
+                "servings": 6,
+                "steps": [
+                  "Faire revenir la viande à feu vif pour la colorer.",
+                  "Ajouter oignons, carottes et champignons.",
+                  "Déglacer au vin rouge et ajouter bouquet garni.",
+                  "Laisser mijoter 2h à feu doux jusqu'à tendreté.",
+                  "Rectifier l'assaisonnement et servir chaud."
+                ]
+              },
+              "ingredients": [
+                {
+                  "name": "Boeuf à braiser",
+                  "quantity": 1200,
+                  "unit": "g"
+                },
+                {
+                  "name": "Vin rouge",
+                  "quantity": 750,
+                  "unit": "ml"
+                },
+                {
+                  "name": "Oignons",
+                  "quantity": 3,
+                  "unit": "pièces"
+                },
+                {
+                  "name": "Carottes",
+                  "quantity": 3,
+                  "unit": "pièces"
+                },
+                {
+                  "name": "Champignons",
+                  "quantity": 300,
+                  "unit": "g"
+                }
+              ]
+            },
+            "quantity": 1,
+            "servings": 4,
+            "adjustedIngredients": [
+              {
+                "name": "Boeuf à braiser",
+                "quantity": 1200,
+                "unit": "g"
+              },
+              {
+                "name": "Vin rouge",
+                "quantity": 750,
+                "unit": "ml"
+              },
+              {
+                "name": "Oignons",
+                "quantity": 3,
+                "unit": "pièces"
+              },
+              {
+                "name": "Carottes",
+                "quantity": 3,
+                "unit": "pièces"
+              },
+              {
+                "name": "Champignons",
+                "quantity": 300,
+                "unit": "g"
+              }
+            ],
+            "adjustedTime": 180,
+            "adjustedPrice": 48
+          },
+          {
+            "dish": {
+              "id": "d3",
+              "name": "Curry de pois chiches",
+              "description": "Vegan et savoureux",
+              "image": "/assets/curry.svg",
+              "recipe": {
+                "timeMinutes": 35,
+                "servings": 4,
+                "steps": [
+                  "Faire revenir oignon et épices (curry) dans un filet d'huile.",
+                  "Ajouter tomates concassées et pois chiches égouttés.",
+                  "Verser le lait de coco et laisser mijoter 15-20 minutes.",
+                  "Servir avec du riz basmati et coriandre fraîche."
+                ]
+              },
+              "ingredients": [
+                {
+                  "name": "Pois chiches",
+                  "quantity": 400,
+                  "unit": "g"
+                },
+                {
+                  "name": "Lait de coco",
+                  "quantity": 400,
+                  "unit": "ml"
+                },
+                {
+                  "name": "Curry en poudre",
+                  "quantity": 2,
+                  "unit": "cuillères à soupe"
+                },
+                {
+                  "name": "Tomates concassées",
+                  "quantity": 400,
+                  "unit": "g"
+                },
+                {
+                  "name": "Oignons",
+                  "quantity": 2,
+                  "unit": "pièces"
+                }
+              ]
+            },
+            "quantity": 1,
+            "servings": 4,
+            "adjustedIngredients": [
+              {
+                "name": "Pois chiches",
+                "quantity": 400,
+                "unit": "g"
+              },
+              {
+                "name": "Lait de coco",
+                "quantity": 400,
+                "unit": "ml"
+              },
+              {
+                "name": "Curry en poudre",
+                "quantity": 2,
+                "unit": "cuillères à soupe"
+              },
+              {
+                "name": "Tomates concassées",
+                "quantity": 400,
+                "unit": "g"
+              },
+              {
+                "name": "Oignons",
+                "quantity": 2,
+                "unit": "pièces"
+              }
+            ],
+            "adjustedTime": 35,
+            "adjustedPrice": 24
+          }
+        ],
+        "totalItems": 3,
+        "totalPrice": 191.17000000000002,
+        "contact": {
+          "phone": "0645391378",
+          "message": ""
+        }
+      },
+      "createdAt": "2026-01-20T19:26:22.369Z",
+      "status": "confirmed",
+      "updatedAt": "2026-01-20T20:03:50.261Z"
+    },
+    {
+      "id": "1768937310790",
+      "userId": "1768937094048",
+      "userEmail": "kevin.dellova@hotmail.fr",
+      "userName": "Kevin Dellova",
+      "user": "Kevin Dellova",
+      "email": "kevin.dellova@hotmail.fr",
+      "date": "2026-01-24",
+      "cart": {
+        "items": [
+          {
+            "dish": {
+              "id": "d1",
+              "name": "Poulet rôti aux herbes",
+              "description": "Poulet rôti, pommes de terre et légumes de saison",
+              "image": "/assets/poulet.svg",
+              "recipe": {
+                "timeMinutes": 90,
+                "servings": 4,
+                "steps": [
+                  "Préchauffer le four à 200°C.",
+                  "Masserez le poulet avec de l'huile d'olive, sel, poivre et herbes (thym, romarin).",
+                  "Disposer le poulet dans un plat avec pommes de terre et carottes coupées.",
+                  "Rôtir 1h15 en arrosant de temps en temps.",
+                  "Laisser reposer 10 minutes avant de découper et servir."
+                ]
+              },
+              "ingredients": [
+                {
+                  "name": "Poulet entier",
+                  "quantity": 1,
+                  "unit": "pièce"
+                },
+                {
+                  "name": "Pommes de terre",
+                  "quantity": 800,
+                  "unit": "g"
+                },
+                {
+                  "name": "Carottes",
+                  "quantity": 4,
+                  "unit": "pièces"
+                },
+                {
+                  "name": "Thym",
+                  "quantity": 2,
+                  "unit": "branches"
+                },
+                {
+                  "name": "Romarin",
+                  "quantity": 2,
+                  "unit": "branches"
+                },
+                {
+                  "name": "Huile d'olive",
+                  "quantity": 3,
+                  "unit": "cuillères à soupe"
+                }
+              ]
+            },
+            "quantity": 1,
+            "servings": 4,
+            "adjustedIngredients": [
+              {
+                "name": "Poulet entier",
+                "quantity": 1,
+                "unit": "pièce"
+              },
+              {
+                "name": "Pommes de terre",
+                "quantity": 800,
+                "unit": "g"
+              },
+              {
+                "name": "Carottes",
+                "quantity": 4,
+                "unit": "pièces"
+              },
+              {
+                "name": "Thym",
+                "quantity": 2,
+                "unit": "branches"
+              },
+              {
+                "name": "Romarin",
+                "quantity": 2,
+                "unit": "branches"
+              },
+              {
+                "name": "Huile d'olive",
+                "quantity": 3,
+                "unit": "cuillères à soupe"
+              }
+            ],
+            "adjustedTime": 90,
+            "adjustedPrice": 48
+          }
+        ],
+        "totalItems": 1,
+        "totalPrice": 69,
+        "contact": {
+          "message": "test"
+        }
+      },
+      "createdAt": "2026-01-20T19:28:30.790Z",
+      "status": "confirmed",
+      "updatedAt": "2026-01-20T20:03:53.187Z"
+    },
+    {
+      "id": "1768938599567",
+      "userId": "1768937094048",
+      "userEmail": "kevin.dellova@hotmail.fr",
+      "userName": "Kevin Dellova",
+      "user": "Kevin Dellova",
+      "email": "kevin.dellova@hotmail.fr",
+      "date": "2026-01-31",
+      "cart": {
+        "items": [
+          {
+            "dish": {
+              "id": "d2",
+              "name": "Boeuf bourguignon",
+              "description": "Classique mijoté au vin rouge",
+              "image": "/assets/boeuf.svg",
+              "recipe": {
+                "timeMinutes": 180,
+                "servings": 6,
+                "steps": [
+                  "Faire revenir la viande à feu vif pour la colorer.",
+                  "Ajouter oignons, carottes et champignons.",
+                  "Déglacer au vin rouge et ajouter bouquet garni.",
+                  "Laisser mijoter 2h à feu doux jusqu'à tendreté.",
+                  "Rectifier l'assaisonnement et servir chaud."
+                ]
+              },
+              "ingredients": [
+                {
+                  "name": "Boeuf à braiser",
+                  "quantity": 1200,
+                  "unit": "g"
+                },
+                {
+                  "name": "Vin rouge",
+                  "quantity": 750,
+                  "unit": "ml"
+                },
+                {
+                  "name": "Oignons",
+                  "quantity": 3,
+                  "unit": "pièces"
+                },
+                {
+                  "name": "Carottes",
+                  "quantity": 3,
+                  "unit": "pièces"
+                },
+                {
+                  "name": "Champignons",
+                  "quantity": 300,
+                  "unit": "g"
+                }
+              ]
+            },
+            "quantity": 1,
+            "servings": 4,
+            "adjustedIngredients": [
+              {
+                "name": "Boeuf à braiser",
+                "quantity": 1200,
+                "unit": "g"
+              },
+              {
+                "name": "Vin rouge",
+                "quantity": 750,
+                "unit": "ml"
+              },
+              {
+                "name": "Oignons",
+                "quantity": 3,
+                "unit": "pièces"
+              },
+              {
+                "name": "Carottes",
+                "quantity": 3,
+                "unit": "pièces"
+              },
+              {
+                "name": "Champignons",
+                "quantity": 300,
+                "unit": "g"
+              }
+            ],
+            "adjustedTime": 180,
+            "adjustedPrice": 48
+          },
+          {
+            "dish": {
+              "id": "d3",
+              "name": "Curry de pois chiches",
+              "description": "Vegan et savoureux",
+              "image": "/assets/curry.svg",
+              "recipe": {
+                "timeMinutes": 35,
+                "servings": 4,
+                "steps": [
+                  "Faire revenir oignon et épices (curry) dans un filet d'huile.",
+                  "Ajouter tomates concassées et pois chiches égouttés.",
+                  "Verser le lait de coco et laisser mijoter 15-20 minutes.",
+                  "Servir avec du riz basmati et coriandre fraîche."
+                ]
+              },
+              "ingredients": [
+                {
+                  "name": "Pois chiches",
+                  "quantity": 400,
+                  "unit": "g"
+                },
+                {
+                  "name": "Lait de coco",
+                  "quantity": 400,
+                  "unit": "ml"
+                },
+                {
+                  "name": "Curry en poudre",
+                  "quantity": 2,
+                  "unit": "cuillères à soupe"
+                },
+                {
+                  "name": "Tomates concassées",
+                  "quantity": 400,
+                  "unit": "g"
+                },
+                {
+                  "name": "Oignons",
+                  "quantity": 2,
+                  "unit": "pièces"
+                }
+              ]
+            },
+            "quantity": 1,
+            "servings": 4,
+            "adjustedIngredients": [
+              {
+                "name": "Pois chiches",
+                "quantity": 400,
+                "unit": "g"
+              },
+              {
+                "name": "Lait de coco",
+                "quantity": 400,
+                "unit": "ml"
+              },
+              {
+                "name": "Curry en poudre",
+                "quantity": 2,
+                "unit": "cuillères à soupe"
+              },
+              {
+                "name": "Tomates concassées",
+                "quantity": 400,
+                "unit": "g"
+              },
+              {
+                "name": "Oignons",
+                "quantity": 2,
+                "unit": "pièces"
+              }
+            ],
+            "adjustedTime": 35,
+            "adjustedPrice": 24
+          },
+          {
+            "dish": {
+              "id": "d5",
+              "name": "Salade quinoa, feta et betterave",
+              "description": "Fraîche et colorée",
+              "image": "/assets/salade.svg",
+              "recipe": {
+                "timeMinutes": 20,
+                "servings": 2,
+                "steps": [
+                  "Cuire le quinoa selon instructions et laisser refroidir.",
+                  "Mélanger betterave coupée, feta émiettée, roquette et quinoa.",
+                  "Assaisonner avec huile d'olive, vinaigre balsamique, sel et poivre.",
+                  "Servir frais."
+                ]
+              },
+              "ingredients": [
+                {
+                  "name": "Quinoa",
+                  "quantity": 200,
+                  "unit": "g"
+                },
+                {
+                  "name": "Feta",
+                  "quantity": 150,
+                  "unit": "g"
+                },
+                {
+                  "name": "Betterave",
+                  "quantity": 2,
+                  "unit": "pièces"
+                },
+                {
+                  "name": "Roquette",
+                  "quantity": 100,
+                  "unit": "g"
+                }
+              ]
+            },
+            "quantity": 1,
+            "servings": 4,
+            "adjustedIngredients": [
+              {
+                "name": "Quinoa",
+                "quantity": 200,
+                "unit": "g"
+              },
+              {
+                "name": "Feta",
+                "quantity": 150,
+                "unit": "g"
+              },
+              {
+                "name": "Betterave",
+                "quantity": 2,
+                "unit": "pièces"
+              },
+              {
+                "name": "Roquette",
+                "quantity": 100,
+                "unit": "g"
+              }
+            ],
+            "adjustedTime": 20,
+            "adjustedPrice": 36
+          },
+          {
+            "dish": {
+              "id": "d4",
+              "name": "Saumon en papillote",
+              "description": "Saumon, citron et légumes verts",
+              "image": "/assets/saumon.svg",
+              "recipe": {
+                "timeMinutes": 20,
+                "servings": 2,
+                "steps": [
+                  "Préchauffer le four à 180°C.",
+                  "Placer le saumon sur du papier cuisson, ajouter citron, aneth et légumes.",
+                  "Refermer en papillote et cuire 12-15 minutes.",
+                  "Ouvrir et servir immédiatement."
+                ]
+              },
+              "ingredients": [
+                {
+                  "name": "Filet de saumon",
+                  "quantity": 400,
+                  "unit": "g"
+                },
+                {
+                  "name": "Citron",
+                  "quantity": 1,
+                  "unit": "pièce"
+                },
+                {
+                  "name": "Asperges",
+                  "quantity": 200,
+                  "unit": "g"
+                },
+                {
+                  "name": "Aneth",
+                  "quantity": 1,
+                  "unit": "bouquet"
+                }
+              ]
+            },
+            "quantity": 1,
+            "servings": 2,
+            "adjustedIngredients": [
+              {
+                "name": "Filet de saumon",
+                "quantity": 200,
+                "unit": "g"
+              },
+              {
+                "name": "Citron",
+                "quantity": 0.5,
+                "unit": "pièce"
+              },
+              {
+                "name": "Asperges",
+                "quantity": 100,
+                "unit": "g"
+              },
+              {
+                "name": "Aneth",
+                "quantity": 0.5,
+                "unit": "bouquet"
+              }
+            ],
+            "adjustedTime": 10,
+            "adjustedPrice": 18
+          },
+          {
+            "dish": {
+              "id": "d6",
+              "name": "Lasagnes bolognaises",
+              "description": "Lasagnes maison",
+              "image": "/assets/lasagnes.svg",
+              "recipe": {
+                "timeMinutes": 90,
+                "servings": 6,
+                "steps": [
+                  "Préparer la sauce bolognaise en faisant revenir viande, oignon et tomate.",
+                  "Préparer la béchamel.",
+                  "Monter les couches: pâtes, sauce, béchamel, parmesan.",
+                  "Cuire 40 minutes au four à 180°C."
+                ]
+              },
+              "ingredients": [
+                {
+                  "name": "Pâtes à lasagne",
+                  "quantity": 250,
+                  "unit": "g"
+                },
+                {
+                  "name": "Viande hachée",
+                  "quantity": 500,
+                  "unit": "g"
+                },
+                {
+                  "name": "Tomate",
+                  "quantity": 400,
+                  "unit": "g"
+                },
+                {
+                  "name": "Béchamel",
+                  "quantity": 500,
+                  "unit": "ml"
+                },
+                {
+                  "name": "Parmesan",
+                  "quantity": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            "quantity": 1,
+            "servings": 2,
+            "adjustedIngredients": [
+              {
+                "name": "Pâtes à lasagne",
+                "quantity": 125,
+                "unit": "g"
+              },
+              {
+                "name": "Viande hachée",
+                "quantity": 250,
+                "unit": "g"
+              },
+              {
+                "name": "Tomate",
+                "quantity": 200,
+                "unit": "g"
+              },
+              {
+                "name": "Béchamel",
+                "quantity": 250,
+                "unit": "ml"
+              },
+              {
+                "name": "Parmesan",
+                "quantity": 75,
+                "unit": "g"
+              }
+            ],
+            "adjustedTime": 45,
+            "adjustedPrice": 18
+          },
+          {
+            "dish": {
+              "id": "d1",
+              "name": "Poulet rôti aux herbes",
+              "description": "Poulet rôti, pommes de terre et légumes de saison",
+              "image": "/assets/poulet.svg",
+              "recipe": {
+                "timeMinutes": 90,
+                "servings": 4,
+                "steps": [
+                  "Préchauffer le four à 200°C.",
+                  "Masserez le poulet avec de l'huile d'olive, sel, poivre et herbes (thym, romarin).",
+                  "Disposer le poulet dans un plat avec pommes de terre et carottes coupées.",
+                  "Rôtir 1h15 en arrosant de temps en temps.",
+                  "Laisser reposer 10 minutes avant de découper et servir."
+                ]
+              },
+              "ingredients": [
+                {
+                  "name": "Poulet entier",
+                  "quantity": 1,
+                  "unit": "pièce"
+                },
+                {
+                  "name": "Pommes de terre",
+                  "quantity": 800,
+                  "unit": "g"
+                },
+                {
+                  "name": "Carottes",
+                  "quantity": 4,
+                  "unit": "pièces"
+                },
+                {
+                  "name": "Thym",
+                  "quantity": 2,
+                  "unit": "branches"
+                },
+                {
+                  "name": "Romarin",
+                  "quantity": 2,
+                  "unit": "branches"
+                },
+                {
+                  "name": "Huile d'olive",
+                  "quantity": 3,
+                  "unit": "cuillères à soupe"
+                }
+              ]
+            },
+            "quantity": 1,
+            "servings": 2,
+            "adjustedIngredients": [
+              {
+                "name": "Poulet entier",
+                "quantity": 0.5,
+                "unit": "pièce"
+              },
+              {
+                "name": "Pommes de terre",
+                "quantity": 400,
+                "unit": "g"
+              },
+              {
+                "name": "Carottes",
+                "quantity": 2,
+                "unit": "pièces"
+              },
+              {
+                "name": "Thym",
+                "quantity": 1,
+                "unit": "branches"
+              },
+              {
+                "name": "Romarin",
+                "quantity": 1,
+                "unit": "branches"
+              },
+              {
+                "name": "Huile d'olive",
+                "quantity": 1.5,
+                "unit": "cuillères à soupe"
+              }
+            ],
+            "adjustedTime": 45,
+            "adjustedPrice": 24
+          }
+        ],
+        "totalItems": 6,
+        "totalPrice": 246.17000000000002,
+        "contact": {
+          "message": "j'ai la dalle putain !"
+        }
+      },
+      "createdAt": "2026-01-20T19:49:59.567Z",
+      "status": "pending"
+    }
+  ],
+  "users": [
+    {
+      "id": "1768937094048",
+      "email": "kevin.dellova@hotmail.fr",
+      "password": "$2b$10$0Y1zlxY7Tkr34HQDwS9Rp.h0TeG7tII9V0G3900PuC12ragNsjbi6",
+      "name": "Kevin Dellova",
+      "createdAt": "2026-01-20T19:24:54.048Z"
+    }
+  ]
+}

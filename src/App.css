@@ -114,6 +114,7 @@ p {
   margin-bottom: var(--spacing-xl);
   box-shadow: var(--shadow-md);
   border: 1px solid var(--border-light);
+  align-items: center;
 }
 
 .nav button {

@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { useCart } from "./cart/context";
+import BatchCookingRequestModal from "./components/BatchCookingRequestModal";
 
-export default function CartView() {
+export default function CartView({ user }: { user?: any }) {
   const {
     items,
     removeDish,
@@ -12,12 +13,24 @@ export default function CartView() {
     grandTotal,
   } = useCart();
 
+  const [showBatchCookingForm, setShowBatchCookingForm] = useState(false);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
+  const handleBatchCookingSuccess = () => {
+    setShowBatchCookingForm(false);
+    setShowSuccessMessage(true);
+    // Auto-hide success message after 5 seconds
+    setTimeout(() => {
+      setShowSuccessMessage(false);
+    }, 5000);
+  };
+
   return (
     <div className="panel">
       <div className="cart-summary">
         <h2>Votre panier</h2>
         <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-          <div className="price-badge">{grandTotal.toFixed(2)}€ total</div>
+          <div className="price-badge">{Number(grandTotal).toFixed(2)}€ total</div>
           {totalTime > 0 && (
             <div
               style={{
@@ -103,7 +116,7 @@ export default function CartView() {
                       fontWeight: "600",
                     }}
                   >
-                    💰 {it.adjustedPrice.toFixed(2)}€
+                    💰 {it.adjustedPrice ? Number(it.adjustedPrice).toFixed(2) : 'N/A'}€
                   </span>
                 </div>
               </div>
@@ -156,7 +169,7 @@ export default function CartView() {
             </span>
             <br />
             <strong style={{ fontSize: "1.1rem", color: "var(--primary)" }}>
-              {totalPrice.toFixed(2)}€
+              {Number(totalPrice).toFixed(2)}€
             </strong>
           </div>
           <div>
@@ -165,7 +178,7 @@ export default function CartView() {
             </span>
             <br />
             <strong style={{ fontSize: "1.1rem", color: "var(--accent)" }}>
-              {cookingPrice.toFixed(2)}€
+              {Number(cookingPrice).toFixed(2)}€
             </strong>
           </div>
           <div>
@@ -207,7 +220,7 @@ export default function CartView() {
               backgroundClip: "text",
             }}
           >
-            {grandTotal.toFixed(2)}€
+            {Number(grandTotal).toFixed(2)}€
           </div>
         </div>
       </div>
@@ -215,7 +228,58 @@ export default function CartView() {
         <button className="ghost" onClick={clear}>
           Vider le panier
         </button>
+        {items.length > 0 && (
+          <button
+            style={{
+              marginLeft: "12px",
+              background:
+                "linear-gradient(135deg, var(--accent) 0%, #f59e0b 100%)",
+              color: "white",
+              border: "none",
+              padding: "12px 20px",
+              borderRadius: "8px",
+              fontWeight: "600",
+              cursor: "pointer",
+              transition: "all 0.3s ease",
+            }}
+            onClick={() => setShowBatchCookingForm(true)}
+            onMouseOver={(e) => {
+              e.currentTarget.style.transform = "translateY(-2px)";
+              e.currentTarget.style.boxShadow =
+                "0 6px 20px rgba(217, 119, 6, 0.3)";
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow = "none";
+            }}
+          >
+            🍳 Faire une demande de batch cooking
+          </button>
+        )}
       </div>
+
+      {showSuccessMessage && (
+        <div className="success-message" style={{ marginTop: "1rem" }}>
+          <h3>✅ Demande envoyée avec succès !</h3>
+          <p>
+            Nous vous recontacterons dans les plus brefs délais pour planifier
+            votre session de batch cooking.
+          </p>
+        </div>
+      )}
+
+      {showBatchCookingForm && (
+        <BatchCookingRequestModal
+          isOpen={showBatchCookingForm}
+          onClose={() => setShowBatchCookingForm(false)}
+          cart={{
+            items,
+            totalItems: items.length,
+            totalPrice: grandTotal,
+          }}
+          user={user}
+        />
+      )}
     </div>
   );
 }
