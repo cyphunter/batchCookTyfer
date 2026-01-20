@@ -159,24 +159,7 @@ export default function DishCard({ dish }: { dish: Dish }) {
             }}
           />
 
-          {/* Servings badge */}
-          <div
-            style={{
-              position: "absolute",
-              top: "var(--spacing-md)",
-              right: "var(--spacing-md)",
-              background: "rgba(255, 255, 255, 0.95)",
-              backdropFilter: "blur(10px)",
-              borderRadius: "var(--radius-md)",
-              padding: "var(--spacing-sm) var(--spacing-md)",
-              fontSize: "0.8rem",
-              fontWeight: "600",
-              color: "var(--text-primary)",
-              boxShadow: "0 2px 8px rgba(0,0,0,0.2)",
-            }}
-          >
-            {servings} pers.
-          </div>
+
 
           {/* Title and description overlay */}
           <div
@@ -246,7 +229,7 @@ export default function DishCard({ dish }: { dish: Dish }) {
               e.currentTarget.style.transform = "translateY(0)";
             }}
           >
-            + Ajouter
+            + Ajouter ({servings} parts)
           </button>
         </div>
       ) : (
@@ -279,12 +262,12 @@ export default function DishCard({ dish }: { dish: Dish }) {
               onClick={handleAddDish}
               style={{
                 marginLeft: "var(--spacing-md)",
-                minWidth: "80px",
+                minWidth: "120px",
                 fontSize: "0.85rem",
                 padding: "var(--spacing-sm) var(--spacing-md)",
               }}
             >
-              + Ajouter
+              + Ajouter ({servings} parts)
             </button>
           </div>
         </div>
@@ -314,7 +297,7 @@ export default function DishCard({ dish }: { dish: Dish }) {
                 ? "var(--warning)"
                 : "var(--error)"
           }
-          label={`💰 ${adjustedPrice.toFixed(2)}€ (${servings} pers.)`}
+          label={`💰 ${Number(adjustedPrice).toFixed(2)}€ (${servings} pers.)`}
         />
       </div>
 
@@ -469,38 +452,6 @@ function RecipePanel({ recipe }: { recipe: Recipe }) {
             animation: "fadeIn 0.3s ease-out",
           }}
         >
-          <div
-            style={{
-              fontSize: "0.8rem",
-              color: "var(--text-muted)",
-              marginBottom: "var(--spacing-md)",
-              display: "flex",
-              gap: "var(--spacing-lg)",
-            }}
-          >
-            {recipe.timeMinutes && (
-              <span
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "var(--spacing-xs)",
-                }}
-              >
-                ⏱️ {recipe.timeMinutes} min
-              </span>
-            )}
-            {recipe.servings && (
-              <span
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "var(--spacing-xs)",
-                }}
-              >
-                👥 {recipe.servings} portions
-              </span>
-            )}
-          </div>
           <ol
             style={{
               margin: 0,

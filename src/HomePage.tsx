@@ -1,5 +1,5 @@
-import React from 'react';
-import './HomePage.css';
+import React from "react";
+import "./HomePage.css";
 
 interface HomePageProps {
   onGetStarted: () => void;
@@ -15,19 +15,19 @@ export default function HomePage({ onGetStarted }: HomePageProps) {
       setMousePosition({ x, y });
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   const getCardTransform = (index: number) => {
     const baseRotationY = index === 0 ? -5 : index === 2 ? 5 : 0;
     const baseRotationX = index === 1 ? -2 : 2;
     const baseScale = index === 1 ? 1.05 : 1;
-    
+
     const parallaxStrength = 15;
     const rotationY = baseRotationY + mousePosition.x * parallaxStrength;
     const rotationX = baseRotationX - mousePosition.y * parallaxStrength;
-    
+
     return `scale(${baseScale}) rotateY(${rotationY}deg) rotateX(${rotationX}deg)`;
   };
   return (
@@ -42,8 +42,9 @@ export default function HomePage({ onGetStarted }: HomePageProps) {
               Votre chef à domicile
             </h1>
             <p className="hero-subtitle">
-              Libérez-vous de la cuisine quotidienne avec notre service de batch cooking professionnel. 
-              Des repas savoureux, équilibrés et préparés avec passion, directement chez vous.
+              Libérez-vous de la cuisine quotidienne avec notre service de batch
+              cooking professionnel. Des repas savoureux, équilibrés et préparés
+              avec passion, directement chez vous.
             </p>
             <div className="hero-features">
               <div className="feature-badge">
@@ -81,35 +82,46 @@ export default function HomePage({ onGetStarted }: HomePageProps) {
       {/* Value Proposition */}
       <section className="value-proposition">
         <div className="container">
-          <h2 className="section-title">Pourquoi choisir BatchCook Premium ?</h2>
+          <h2 className="section-title">
+            Pourquoi choisir BatchCook Premium ?
+          </h2>
           <div className="value-grid">
-            <div 
+            <div
               className="value-card"
               style={{ transform: getCardTransform(0) }}
             >
               <div className="value-icon">💰</div>
               <h3>Prix compétitifs</h3>
-              <p>À partir de <strong>8€ par repas</strong>, moins cher qu'un restaurant, plus savoureux qu'un plat préparé.</p>
+              <p>
+                À partir de <strong>8€ par repas</strong>, moins cher qu'un
+                restaurant, plus savoureux qu'un plat préparé.
+              </p>
               <div className="price-highlight">
                 <span className="price">8€</span>
                 <span className="price-unit">/repas</span>
               </div>
             </div>
-            <div 
+            <div
               className="value-card"
               style={{ transform: getCardTransform(1) }}
             >
               <div className="value-icon">⏰</div>
               <h3>Gain de temps</h3>
-              <p>Économisez <strong>5h par semaine</strong>. Plus de courses, de préparation ou de vaisselle. Juste le plaisir de déguster.</p>
+              <p>
+                Économisez <strong>5h par semaine</strong>. Plus de courses, de
+                préparation ou de vaisselle. Juste le plaisir de déguster.
+              </p>
             </div>
-            <div 
+            <div
               className="value-card"
               style={{ transform: getCardTransform(2) }}
             >
               <div className="value-icon">🏆</div>
               <h3>Qualité garantie</h3>
-              <p>Ingrédients frais et locaux, recettes équilibrées créées par notre chef diplômé avec 10 ans d'expérience.</p>
+              <p>
+                Ingrédients frais et locaux, recettes équilibrées créées par
+                notre chef diplômé avec 10 ans d'expérience.
+              </p>
             </div>
           </div>
         </div>
@@ -124,21 +136,29 @@ export default function HomePage({ onGetStarted }: HomePageProps) {
               <div className="step-number">1</div>
               <div className="step-content">
                 <h3>Choisissez vos menus</h3>
-                <p>Sélectionnez parmi nos 20+ recettes renouvelées chaque semaine</p>
+                <p>
+                  Sélectionnez parmi nos 20+ recettes renouvelées chaque semaine
+                </p>
               </div>
             </div>
             <div className="step">
               <div className="step-number">2</div>
               <div className="step-content">
                 <h3>Nous venons chez vous</h3>
-                <p>Notre chef se déplace avec tous les ingrédients et ustensiles nécessaires</p>
+                <p>
+                  Notre chef se déplace avec tous les ingrédients et ustensiles
+                  nécessaires
+                </p>
               </div>
             </div>
             <div className="step">
               <div className="step-number">3</div>
               <div className="step-content">
                 <h3>Préparation en 2-3h</h3>
-                <p>Pendant que vous vaquez à vos occupations, nous préparons 8-12 repas</p>
+                <p>
+                  Pendant que vous vaquez à vos occupations, nous préparons 8-12
+                  repas
+                </p>
               </div>
             </div>
             <div className="step">
@@ -217,12 +237,16 @@ export default function HomePage({ onGetStarted }: HomePageProps) {
             <div className="guarantee-card">
               <div className="guarantee-icon">🛡️</div>
               <h3>Satisfaction garantie</h3>
-              <p>Pas satisfait ? Nous revenons gratuitement ou vous remboursons</p>
+              <p>
+                Pas satisfait ? Nous revenons gratuitement ou vous remboursons
+              </p>
             </div>
             <div className="guarantee-card">
               <div className="guarantee-icon">🚀</div>
               <h3>Ponctualité assurée</h3>
-              <p>Retard de plus de 15 min ? Votre prochaine session est offerte</p>
+              <p>
+                Retard de plus de 15 min ? Votre prochaine session est offerte
+              </p>
             </div>
             <div className="guarantee-card">
               <div className="guarantee-icon">🧼</div>
@@ -248,7 +272,8 @@ export default function HomePage({ onGetStarted }: HomePageProps) {
               Réserver ma première session - 89€
             </button>
             <p className="cta-note">
-              🎁 <strong>Offre de lancement :</strong> -20€ sur votre première commande avec le code BIENVENUE20
+              🎁 <strong>Offre de lancement :</strong> -20€ sur votre première
+              commande avec le code BIENVENUE20
             </p>
           </div>
         </div>
