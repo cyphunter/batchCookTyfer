@@ -4,6 +4,11 @@
   --muted: #6b4a3e;
   --accent: #d97706; /* warm orange */
   --accent-2: #ffb86b;
+  --primary: #d97706;
+  --text-secondary: #6b4a3e;
+  --spacing-md: 1rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
   --soft-shadow: 0 8px 24px rgba(107, 74, 62, 0.08);
 }
 
@@ -18,7 +23,7 @@ body {
     "Helvetica Neue",
     Arial;
   margin: 0;
-  padding: 2.5rem;
+  padding: 0;
   background: linear-gradient(180deg, var(--bg), #fffaf6);
   color: var(--muted);
 }
@@ -43,6 +48,45 @@ h1 {
 
 nav button {
   margin-left: 0.5rem;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid rgba(107, 74, 62, 0.2);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+nav button:hover {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+nav button.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--soft-shadow);
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .panel {
